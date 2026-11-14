@@ -1,0 +1,748 @@
+version 3
+run red-0-20261114-12:31:48-32620
+attr configname red
+attr datetime 20261114-12:31:48
+attr datetimef 20261114-123148
+attr experiment red
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network red
+attr processid 32620
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network red
+config red.numRouters 7
+config red.numSubredes 5
+config red.numNadas 3
+config red.direccionEspecial "\"224.001\""
+config red.routers[0].tieneSubred true
+config red.routers[1].tieneSubred false
+config red.routers[2].tieneSubred true
+config red.routers[3].tieneSubred false
+config red.routers[4].tieneSubred true
+config red.routers[5].tieneSubred true
+config red.routers[6].tieneSubred true
+config red.routers[0].prefijo 160
+config red.routers[1].prefijo 161
+config red.routers[2].prefijo 162
+config red.routers[3].prefijo 163
+config red.routers[4].prefijo 164
+config red.routers[5].prefijo 165
+config red.routers[6].prefijo 166
+config red.prefijosSubredes "\"160 162 164 166 165\""
+config red.subredes[0].prefijo 160
+config red.subredes[1].prefijo 162
+config red.subredes[2].prefijo 164
+config red.subredes[3].prefijo 166
+config red.subredes[4].prefijo 165
+config red.routers[0].tamanoTabla 5
+config red.routers[0].tablaPrefijosStr "\"160 161 162 163 164\""
+config red.routers[0].tablaPuertosStr "\"0 3 1 2 2\""
+config red.routers[0].tablaMascarasStr "\"8 8 8 8 6\""
+config red.routers[1].tamanoTabla 5
+config red.routers[1].tablaPrefijosStr "\"164 160 162 163 164\""
+config red.routers[1].tablaPuertosStr "\"3 1 1 2 2\""
+config red.routers[1].tablaMascarasStr "\"8 8 8 8 6\""
+config red.routers[2].tamanoTabla 3
+config red.routers[2].tablaPrefijosStr "\"162 162 164\""
+config red.routers[2].tablaPuertosStr "\"2 0 3\""
+config red.routers[2].tablaMascarasStr "\"8 6 6\""
+config red.routers[3].tamanoTabla 4
+config red.routers[3].tablaPrefijosStr "\"161 166 160 164\""
+config red.routers[3].tablaPuertosStr "\"0 2 1 3\""
+config red.routers[3].tablaMascarasStr "\"8 8 6 7\""
+config red.routers[4].tamanoTabla 4
+config red.routers[4].tablaPrefijosStr "\"161 164 160 164\""
+config red.routers[4].tablaPuertosStr "\"0 2 1 1\""
+config red.routers[4].tablaMascarasStr "\"8 8 6 6\""
+config red.routers[5].tamanoTabla 5
+config red.routers[5].tablaPrefijosStr "\"162 164 165 166 160\""
+config red.routers[5].tablaPuertosStr "\"2 0 3 2 1\""
+config red.routers[5].tablaMascarasStr "\"8 8 8 8 6\""
+config red.routers[6].tamanoTabla 4
+config red.routers[6].tablaPrefijosStr "\"162 166 160 164\""
+config red.routers[6].tablaPuertosStr "\"1 2 0 3\""
+config red.routers[6].tablaMascarasStr "\"8 8 6 7\""
+config red.tamanoMaxDatos 1480
+config red.tamanoMinDatos 8
+config red.tamanoCabecera 20
+config red.tamanoMaxCola 20
+config red.modoPrueba true
+config red.estacionEmisora "\"162.001\""
+config red.estacionDestino "\"164.002\""
+config red.tipoServicioPrueba 0
+config red.modoTrafico false
+config num-rngs 30
+config red.subredes[0].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[1].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[2].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[3].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[0].traficoPrioritario 50
+config red.subredes[1].traficoPrioritario 50
+config red.subredes[2].traficoPrioritario 50
+config red.subredes[3].traficoPrioritario 50
+config red.modoIngenieriaTrafico false
+config red.numCaminos 0
+config red.caminosStr "\"\""
+config red.serviciosStr "\"\""
+
+par red.routers[0].puerto$o[3].channel typename "\"red.C50\""
+par red.routers[0].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[0].puerto$o[3].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[0].puerto$o[3].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[0].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[0].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[0].puerto$o[3].channel longitud 50km
+attr unit km
+par red.routers[1].puerto$o[1].channel typename "\"red.C50\""
+par red.routers[1].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[1].puerto$o[1].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[1].puerto$o[1].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[1].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[1].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[1].puerto$o[1].channel longitud 50km
+attr unit km
+par red.routers[0].puerto$o[1].channel typename "\"red.C50\""
+par red.routers[0].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[0].puerto$o[1].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[0].puerto$o[1].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[0].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[0].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[0].puerto$o[1].channel longitud 50km
+attr unit km
+par red.routers[2].puerto$o[0].channel typename "\"red.C50\""
+par red.routers[2].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[2].puerto$o[0].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[2].puerto$o[0].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[2].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[2].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[2].puerto$o[0].channel longitud 50km
+attr unit km
+par red.routers[0].puerto$o[2].channel typename "\"red.C25\""
+par red.routers[0].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[0].puerto$o[2].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[0].puerto$o[2].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[0].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[0].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[0].puerto$o[2].channel longitud 25km
+attr unit km
+par red.routers[3].puerto$o[1].channel typename "\"red.C25\""
+par red.routers[3].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[3].puerto$o[1].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[3].puerto$o[1].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[3].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[3].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[3].puerto$o[1].channel longitud 25km
+attr unit km
+par red.routers[1].puerto$o[2].channel typename "\"red.C25\""
+par red.routers[1].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[1].puerto$o[2].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[1].puerto$o[2].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[1].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[1].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[1].puerto$o[2].channel longitud 25km
+attr unit km
+par red.routers[3].puerto$o[0].channel typename "\"red.C25\""
+par red.routers[3].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[3].puerto$o[0].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[3].puerto$o[0].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[3].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[3].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[3].puerto$o[0].channel longitud 25km
+attr unit km
+par red.routers[1].puerto$o[3].channel typename "\"red.C50\""
+par red.routers[1].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[1].puerto$o[3].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[1].puerto$o[3].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[1].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[1].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[1].puerto$o[3].channel longitud 50km
+attr unit km
+par red.routers[4].puerto$o[0].channel typename "\"red.C50\""
+par red.routers[4].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[4].puerto$o[0].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[4].puerto$o[0].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[4].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[4].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[4].puerto$o[0].channel longitud 50km
+attr unit km
+par red.routers[2].puerto$o[3].channel typename "\"red.C50\""
+par red.routers[2].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[2].puerto$o[3].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[2].puerto$o[3].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[2].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[2].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[2].puerto$o[3].channel longitud 50km
+attr unit km
+par red.routers[6].puerto$o[1].channel typename "\"red.C50\""
+par red.routers[6].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[6].puerto$o[1].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[6].puerto$o[1].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[6].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[6].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[6].puerto$o[1].channel longitud 50km
+attr unit km
+par red.routers[3].puerto$o[2].channel typename "\"red.C50\""
+par red.routers[3].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[3].puerto$o[2].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[3].puerto$o[2].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[3].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[3].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[3].puerto$o[2].channel longitud 50km
+attr unit km
+par red.routers[6].puerto$o[0].channel typename "\"red.C50\""
+par red.routers[6].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[6].puerto$o[0].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[6].puerto$o[0].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[6].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[6].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[6].puerto$o[0].channel longitud 50km
+attr unit km
+par red.routers[3].puerto$o[3].channel typename "\"red.C25\""
+par red.routers[3].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[3].puerto$o[3].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[3].puerto$o[3].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[3].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[3].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[3].puerto$o[3].channel longitud 25km
+attr unit km
+par red.routers[5].puerto$o[1].channel typename "\"red.C25\""
+par red.routers[5].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[5].puerto$o[1].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[5].puerto$o[1].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[5].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[5].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[5].puerto$o[1].channel longitud 25km
+attr unit km
+par red.routers[6].puerto$o[3].channel typename "\"red.C50\""
+par red.routers[6].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[6].puerto$o[3].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[6].puerto$o[3].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[6].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[6].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[6].puerto$o[3].channel longitud 50km
+attr unit km
+par red.routers[5].puerto$o[2].channel typename "\"red.C50\""
+par red.routers[5].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[5].puerto$o[2].channel delay 0.00025s
+attr mutable ""
+attr unit s
+par red.routers[5].puerto$o[2].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[5].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[5].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[5].puerto$o[2].channel longitud 50km
+attr unit km
+par red.routers[5].puerto$o[0].channel typename "\"red.C25\""
+par red.routers[5].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[5].puerto$o[0].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[5].puerto$o[0].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[5].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[5].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[5].puerto$o[0].channel longitud 25km
+attr unit km
+par red.routers[4].puerto$o[1].channel typename "\"red.C25\""
+par red.routers[4].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[4].puerto$o[1].channel delay 0.000125s
+attr mutable ""
+attr unit s
+par red.routers[4].puerto$o[1].channel datarate 155520000bps
+attr mutable ""
+attr unit bps
+par red.routers[4].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[4].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[4].puerto$o[1].channel longitud 25km
+attr unit km
+par red.routers[0].puerto$o[0].channel typename "\"red.CRS\""
+par red.routers[0].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[0].puerto$o[0].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[0].puerto$o[0].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[0].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[0].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[0].puerto$o[0].channel longitud 1km
+attr unit km
+par red.subredes[0].puerto$o.channel typename "\"red.CRS\""
+par red.subredes[0].puerto$o.channel disabled false
+attr mutable ""
+par red.subredes[0].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.subredes[0].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.subredes[0].puerto$o.channel ber 0
+attr mutable ""
+par red.subredes[0].puerto$o.channel per 0
+attr mutable ""
+par red.subredes[0].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[2].puerto$o[2].channel typename "\"red.CRS\""
+par red.routers[2].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[2].puerto$o[2].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[2].puerto$o[2].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[2].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[2].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[2].puerto$o[2].channel longitud 1km
+attr unit km
+par red.subredes[1].puerto$o.channel typename "\"red.CRS\""
+par red.subredes[1].puerto$o.channel disabled false
+attr mutable ""
+par red.subredes[1].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.subredes[1].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.subredes[1].puerto$o.channel ber 0
+attr mutable ""
+par red.subredes[1].puerto$o.channel per 0
+attr mutable ""
+par red.subredes[1].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[6].puerto$o[2].channel typename "\"red.CRS\""
+par red.routers[6].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[6].puerto$o[2].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[6].puerto$o[2].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[6].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[6].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[6].puerto$o[2].channel longitud 1km
+attr unit km
+par red.subredes[3].puerto$o.channel typename "\"red.CRS\""
+par red.subredes[3].puerto$o.channel disabled false
+attr mutable ""
+par red.subredes[3].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.subredes[3].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.subredes[3].puerto$o.channel ber 0
+attr mutable ""
+par red.subredes[3].puerto$o.channel per 0
+attr mutable ""
+par red.subredes[3].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[5].puerto$o[3].channel typename "\"red.CRS\""
+par red.routers[5].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[5].puerto$o[3].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[5].puerto$o[3].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[5].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[5].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[5].puerto$o[3].channel longitud 1km
+attr unit km
+par red.subredes[4].puerto$o.channel typename "\"red.CRS\""
+par red.subredes[4].puerto$o.channel disabled false
+attr mutable ""
+par red.subredes[4].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.subredes[4].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.subredes[4].puerto$o.channel ber 0
+attr mutable ""
+par red.subredes[4].puerto$o.channel per 0
+attr mutable ""
+par red.subredes[4].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[4].puerto$o[2].channel typename "\"red.CRS\""
+par red.routers[4].puerto$o[2].channel disabled false
+attr mutable ""
+par red.routers[4].puerto$o[2].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[4].puerto$o[2].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[4].puerto$o[2].channel ber 0
+attr mutable ""
+par red.routers[4].puerto$o[2].channel per 0
+attr mutable ""
+par red.routers[4].puerto$o[2].channel longitud 1km
+attr unit km
+par red.subredes[2].puerto$o.channel typename "\"red.CRS\""
+par red.subredes[2].puerto$o.channel disabled false
+attr mutable ""
+par red.subredes[2].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.subredes[2].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.subredes[2].puerto$o.channel ber 0
+attr mutable ""
+par red.subredes[2].puerto$o.channel per 0
+attr mutable ""
+par red.subredes[2].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[1].puerto$o[0].channel typename "\"red.CRS\""
+par red.routers[1].puerto$o[0].channel disabled false
+attr mutable ""
+par red.routers[1].puerto$o[0].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[1].puerto$o[0].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[1].puerto$o[0].channel ber 0
+attr mutable ""
+par red.routers[1].puerto$o[0].channel per 0
+attr mutable ""
+par red.routers[1].puerto$o[0].channel longitud 1km
+attr unit km
+par red.nadas[0].puerto$o.channel typename "\"red.CRS\""
+par red.nadas[0].puerto$o.channel disabled false
+attr mutable ""
+par red.nadas[0].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.nadas[0].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.nadas[0].puerto$o.channel ber 0
+attr mutable ""
+par red.nadas[0].puerto$o.channel per 0
+attr mutable ""
+par red.nadas[0].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[2].puerto$o[1].channel typename "\"red.CRS\""
+par red.routers[2].puerto$o[1].channel disabled false
+attr mutable ""
+par red.routers[2].puerto$o[1].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[2].puerto$o[1].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[2].puerto$o[1].channel ber 0
+attr mutable ""
+par red.routers[2].puerto$o[1].channel per 0
+attr mutable ""
+par red.routers[2].puerto$o[1].channel longitud 1km
+attr unit km
+par red.nadas[1].puerto$o.channel typename "\"red.CRS\""
+par red.nadas[1].puerto$o.channel disabled false
+attr mutable ""
+par red.nadas[1].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.nadas[1].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.nadas[1].puerto$o.channel ber 0
+attr mutable ""
+par red.nadas[1].puerto$o.channel per 0
+attr mutable ""
+par red.nadas[1].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[4].puerto$o[3].channel typename "\"red.CRS\""
+par red.routers[4].puerto$o[3].channel disabled false
+attr mutable ""
+par red.routers[4].puerto$o[3].channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.routers[4].puerto$o[3].channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.routers[4].puerto$o[3].channel ber 0
+attr mutable ""
+par red.routers[4].puerto$o[3].channel per 0
+attr mutable ""
+par red.routers[4].puerto$o[3].channel longitud 1km
+attr unit km
+par red.nadas[2].puerto$o.channel typename "\"red.CRS\""
+par red.nadas[2].puerto$o.channel disabled false
+attr mutable ""
+par red.nadas[2].puerto$o.channel delay 5e-06s
+attr mutable ""
+attr unit s
+par red.nadas[2].puerto$o.channel datarate 1e+09bps
+attr mutable ""
+attr unit bps
+par red.nadas[2].puerto$o.channel ber 0
+attr mutable ""
+par red.nadas[2].puerto$o.channel per 0
+attr mutable ""
+par red.nadas[2].puerto$o.channel longitud 1km
+attr unit km
+par red.routers[0] typename "\"router\""
+par red.routers[0] indice 0
+par red.routers[0] prefijo 160
+par red.routers[0] numPuertos 4
+par red.routers[0] tieneSubred true
+par red.routers[0] tamanoTabla 5
+par red.routers[0] tablaPrefijosStr "\"160 161 162 163 164\""
+par red.routers[0] tablaPuertosStr "\"0 3 1 2 2\""
+par red.routers[0] tablaMascarasStr "\"8 8 8 8 6\""
+par red.routers[1] typename "\"router\""
+par red.routers[1] indice 1
+par red.routers[1] prefijo 161
+par red.routers[1] numPuertos 4
+par red.routers[1] tieneSubred false
+par red.routers[1] tamanoTabla 5
+par red.routers[1] tablaPrefijosStr "\"164 160 162 163 164\""
+par red.routers[1] tablaPuertosStr "\"3 1 1 2 2\""
+par red.routers[1] tablaMascarasStr "\"8 8 8 8 6\""
+par red.routers[2] typename "\"router\""
+par red.routers[2] indice 2
+par red.routers[2] prefijo 162
+par red.routers[2] numPuertos 4
+par red.routers[2] tieneSubred true
+par red.routers[2] tamanoTabla 3
+par red.routers[2] tablaPrefijosStr "\"162 162 164\""
+par red.routers[2] tablaPuertosStr "\"2 0 3\""
+par red.routers[2] tablaMascarasStr "\"8 6 6\""
+par red.routers[3] typename "\"router\""
+par red.routers[3] indice 3
+par red.routers[3] prefijo 163
+par red.routers[3] numPuertos 4
+par red.routers[3] tieneSubred false
+par red.routers[3] tamanoTabla 4
+par red.routers[3] tablaPrefijosStr "\"161 166 160 164\""
+par red.routers[3] tablaPuertosStr "\"0 2 1 3\""
+par red.routers[3] tablaMascarasStr "\"8 8 6 7\""
+par red.routers[4] typename "\"router\""
+par red.routers[4] indice 4
+par red.routers[4] prefijo 164
+par red.routers[4] numPuertos 4
+par red.routers[4] tieneSubred true
+par red.routers[4] tamanoTabla 4
+par red.routers[4] tablaPrefijosStr "\"161 164 160 164\""
+par red.routers[4] tablaPuertosStr "\"0 2 1 1\""
+par red.routers[4] tablaMascarasStr "\"8 8 6 6\""
+par red.routers[5] typename "\"router\""
+par red.routers[5] indice 5
+par red.routers[5] prefijo 165
+par red.routers[5] numPuertos 4
+par red.routers[5] tieneSubred true
+par red.routers[5] tamanoTabla 5
+par red.routers[5] tablaPrefijosStr "\"162 164 165 166 160\""
+par red.routers[5] tablaPuertosStr "\"2 0 3 2 1\""
+par red.routers[5] tablaMascarasStr "\"8 8 8 8 6\""
+par red.routers[6] typename "\"router\""
+par red.routers[6] indice 6
+par red.routers[6] prefijo 166
+par red.routers[6] numPuertos 4
+par red.routers[6] tieneSubred true
+par red.routers[6] tamanoTabla 4
+par red.routers[6] tablaPrefijosStr "\"162 166 160 164\""
+par red.routers[6] tablaPuertosStr "\"1 2 0 3\""
+par red.routers[6] tablaMascarasStr "\"8 8 6 7\""
+par red.subredes[0] typename "\"subred\""
+par red.subredes[0] indice 0
+par red.subredes[0] prefijo 160
+par red.subredes[0] tiempoMedioEntrePaquetes 2.3e-05
+par red.subredes[0] traficoPrioritario 50
+par red.subredes[1] typename "\"subred\""
+par red.subredes[1] indice 1
+par red.subredes[1] prefijo 162
+par red.subredes[1] tiempoMedioEntrePaquetes 2.3e-05
+par red.subredes[1] traficoPrioritario 50
+par red.subredes[2] typename "\"subred\""
+par red.subredes[2] indice 2
+par red.subredes[2] prefijo 164
+par red.subredes[2] tiempoMedioEntrePaquetes 2.3e-05
+par red.subredes[2] traficoPrioritario 50
+par red.subredes[3] typename "\"subred\""
+par red.subredes[3] indice 3
+par red.subredes[3] prefijo 166
+par red.subredes[3] tiempoMedioEntrePaquetes 2.3e-05
+par red.subredes[3] traficoPrioritario 50
+par red.subredes[4] typename "\"subred\""
+par red.subredes[4] indice 4
+par red.subredes[4] prefijo 165
+par red.subredes[4] tiempoMedioEntrePaquetes 0
+par red.subredes[4] traficoPrioritario 0
+par red.nadas[0] typename "\"nada\""
+par red.nadas[0] identificador 0
+par red.nadas[1] typename "\"nada\""
+par red.nadas[1] identificador 1
+par red.nadas[2] typename "\"nada\""
+par red.nadas[2] identificador 2
+par red typename "\"red\""
+par red numRouters 7
+par red numSubredes 5
+par red numNadas 3
+par red prefijosSubredes "\"160 162 164 166 165\""
+par red tamanoMaxDatos 1480
+par red tamanoMinDatos 8
+par red tamanoCabecera 20
+par red tamanoMaxCola 20
+par red modoPrueba true
+par red estacionEmisora "\"162.001\""
+par red estacionDestino "\"164.002\""
+par red tipoServicioPrueba 0
+par red direccionEspecial "\"224.001\""
+par red modoTrafico false
+par red modoIngenieriaTrafico false
+par red numCaminos 0
+par red caminosStr "\"\""
+par red serviciosStr "\"\""
+

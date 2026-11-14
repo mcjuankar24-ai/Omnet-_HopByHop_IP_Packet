@@ -1,0 +1,154 @@
+file 5976 1794655981                                            
+version 3
+run red-0-20261114-12:31:48-32620
+attr configname red
+attr datetime 20261114-12:31:48
+attr datetimef 20261114-123148
+attr experiment red
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network red
+attr processid 32620
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network red
+config red.numRouters 7
+config red.numSubredes 5
+config red.numNadas 3
+config red.direccionEspecial "\"224.001\""
+config red.routers[0].tieneSubred true
+config red.routers[1].tieneSubred false
+config red.routers[2].tieneSubred true
+config red.routers[3].tieneSubred false
+config red.routers[4].tieneSubred true
+config red.routers[5].tieneSubred true
+config red.routers[6].tieneSubred true
+config red.routers[0].prefijo 160
+config red.routers[1].prefijo 161
+config red.routers[2].prefijo 162
+config red.routers[3].prefijo 163
+config red.routers[4].prefijo 164
+config red.routers[5].prefijo 165
+config red.routers[6].prefijo 166
+config red.prefijosSubredes "\"160 162 164 166 165\""
+config red.subredes[0].prefijo 160
+config red.subredes[1].prefijo 162
+config red.subredes[2].prefijo 164
+config red.subredes[3].prefijo 166
+config red.subredes[4].prefijo 165
+config red.routers[0].tamanoTabla 5
+config red.routers[0].tablaPrefijosStr "\"160 161 162 163 164\""
+config red.routers[0].tablaPuertosStr "\"0 3 1 2 2\""
+config red.routers[0].tablaMascarasStr "\"8 8 8 8 6\""
+config red.routers[1].tamanoTabla 5
+config red.routers[1].tablaPrefijosStr "\"164 160 162 163 164\""
+config red.routers[1].tablaPuertosStr "\"3 1 1 2 2\""
+config red.routers[1].tablaMascarasStr "\"8 8 8 8 6\""
+config red.routers[2].tamanoTabla 3
+config red.routers[2].tablaPrefijosStr "\"162 162 164\""
+config red.routers[2].tablaPuertosStr "\"2 0 3\""
+config red.routers[2].tablaMascarasStr "\"8 6 6\""
+config red.routers[3].tamanoTabla 4
+config red.routers[3].tablaPrefijosStr "\"161 166 160 164\""
+config red.routers[3].tablaPuertosStr "\"0 2 1 3\""
+config red.routers[3].tablaMascarasStr "\"8 8 6 7\""
+config red.routers[4].tamanoTabla 4
+config red.routers[4].tablaPrefijosStr "\"161 164 160 164\""
+config red.routers[4].tablaPuertosStr "\"0 2 1 1\""
+config red.routers[4].tablaMascarasStr "\"8 8 6 6\""
+config red.routers[5].tamanoTabla 5
+config red.routers[5].tablaPrefijosStr "\"162 164 165 166 160\""
+config red.routers[5].tablaPuertosStr "\"2 0 3 2 1\""
+config red.routers[5].tablaMascarasStr "\"8 8 8 8 6\""
+config red.routers[6].tamanoTabla 4
+config red.routers[6].tablaPrefijosStr "\"162 166 160 164\""
+config red.routers[6].tablaPuertosStr "\"1 2 0 3\""
+config red.routers[6].tablaMascarasStr "\"8 8 6 7\""
+config red.tamanoMaxDatos 1480
+config red.tamanoMinDatos 8
+config red.tamanoCabecera 20
+config red.tamanoMaxCola 20
+config red.modoPrueba true
+config red.estacionEmisora "\"162.001\""
+config red.estacionDestino "\"164.002\""
+config red.tipoServicioPrueba 0
+config red.modoTrafico false
+config num-rngs 30
+config red.subredes[0].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[1].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[2].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[3].tiempoMedioEntrePaquetes 0.000023
+config red.subredes[0].traficoPrioritario 50
+config red.subredes[1].traficoPrioritario 50
+config red.subredes[2].traficoPrioritario 50
+config red.subredes[3].traficoPrioritario 50
+config red.modoIngenieriaTrafico false
+config red.numCaminos 0
+config red.caminosStr "\"\""
+config red.serviciosStr "\"\""
+
+vector 0 red.subredes[2] RetardoDeSubred162Hasta164 ETV
+vector 1 red.routers[0] R160ProbDesbordamientoPto0 ETV
+vector 2 red.routers[0] R160ProbDesbordamientoPto1 ETV
+vector 3 red.routers[0] R160ProbDesbordamientoPto2 ETV
+vector 4 red.routers[0] R160ProbDesbordamientoPto3 ETV
+vector 5 red.routers[1] R161ProbDesbordamientoPto0 ETV
+vector 6 red.routers[1] R161ProbDesbordamientoPto1 ETV
+vector 7 red.routers[1] R161ProbDesbordamientoPto2 ETV
+vector 8 red.routers[1] R161ProbDesbordamientoPto3 ETV
+vector 9 red.routers[2] R162ProbDesbordamientoPto0 ETV
+vector 10 red.routers[2] R162ProbDesbordamientoPto1 ETV
+vector 11 red.routers[2] R162ProbDesbordamientoPto2 ETV
+vector 12 red.routers[2] R162ProbDesbordamientoPto3 ETV
+vector 13 red.routers[3] R163ProbDesbordamientoPto0 ETV
+vector 14 red.routers[3] R163ProbDesbordamientoPto1 ETV
+vector 15 red.routers[3] R163ProbDesbordamientoPto2 ETV
+vector 16 red.routers[3] R163ProbDesbordamientoPto3 ETV
+vector 17 red.routers[4] R164ProbDesbordamientoPto0 ETV
+vector 18 red.routers[4] R164ProbDesbordamientoPto1 ETV
+vector 19 red.routers[4] R164ProbDesbordamientoPto2 ETV
+vector 20 red.routers[4] R164ProbDesbordamientoPto3 ETV
+vector 21 red.routers[5] R165ProbDesbordamientoPto0 ETV
+vector 22 red.routers[5] R165ProbDesbordamientoPto1 ETV
+vector 23 red.routers[5] R165ProbDesbordamientoPto2 ETV
+vector 24 red.routers[5] R165ProbDesbordamientoPto3 ETV
+vector 25 red.routers[6] R166ProbDesbordamientoPto0 ETV
+vector 26 red.routers[6] R166ProbDesbordamientoPto1 ETV
+vector 27 red.routers[6] R166ProbDesbordamientoPto2 ETV
+vector 28 red.routers[6] R166ProbDesbordamientoPto3 ETV
+0	5271 40 5 5 80.000765125236 80.000765125236 1 0.7651252360005856 0.7651252360005856 0.7651252360005856 0.5854166267649518
+1	5311 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+2	5334 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+3	5357 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+4	5380 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+5	5403 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+6	5426 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+7	5449 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+8	5472 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+9	5495 23 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+10	5518 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+11	5542 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+12	5566 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+13	5590 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+14	5614 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+15	5638 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+16	5662 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+17	5686 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+18	5710 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+19	5734 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+20	5758 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+21	5782 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+22	5806 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+23	5830 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+24	5854 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+25	5878 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+26	5902 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+27	5926 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+28	5950 24 5 5 80.000765125236 80.000765125236 1 0 0 0 0
+
