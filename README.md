@@ -7,10 +7,10 @@
 
 # Hop-by-Hop IP Routing — OMNeT++ Simulation
 
-**ETSIT · University of Málaga** | **Authors:** _name1_, _name2_
+**ETSIT · University of Málaga** | **Authors:** _Juan Carlos Mesa Ciruelo_
 **Course:** Redes y Servicios de Telecomunicación 3 (B.Sc. in Telematics Engineering) · Academic year 2026-27
 **Lecturer:** María Carmen España Boquera
-**Version:** 1.0 (Practice 1, part 1)
+**Version:** 1.1 (Practice 1, part 1)
 
 ## 📖 Summary
 
